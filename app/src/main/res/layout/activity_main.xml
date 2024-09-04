@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="234dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.075"
+                app:srcCompat="@drawable/bem" />
+
+            <TextView
+                android:id="@+id/textView_judul"
+                android:layout_width="400dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="12dp"
+                android:text="Ketua BEM UNY Ngaku Dicekik Dosen saat Orasi di Depan Mahasiswa Baru"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/imageView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.909"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_content"
+                android:layout_width="393dp"
+                android:layout_height="752dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:justificationMode="inter_word"
+                android:text="\t Jakarta, CNN Indonesia -- Ketua Badan Eksekutif Mahasiswa (BEM) Universitas Negeri Yogyakarta atau UNY, Farras Raihan (21) mengaku mendapatkan tindak represif dari seorang dosen kampusnya saat menyampaikan orasi di kegiatan ospek atau Pengenalan Kehidupan Kampus bagi Mahasiswa Baru (PKKMB), Selasa (6/8) siang kemarin. Farras mengaku dicekik oleh sang dosen. Selain itu, anggota BEM lainnya ditindih ke lantai oleh oknum petugas keamanan kampus dan panitia acara. Insiden ini viral di media sosial. \n\n
+'Mencekik, (yang dicekik) saya,' kata Farras saat ditemui di UNY, Sleman, DIY, Rabu (7/8). \n\n
+Farras mengungkap peristiwa itu bermula ketika sejumlah elemen BEM berniat menyampaikan orasi kebangsaan di depan mahasiswa baru. Lokasi acara bertempat di GOR kampus.\n\n
+Kata Farras, orasi kebangsaan rutin disampaikan oleh ketua BEM universitas dan fakultas pada setiap pelaksanaan PKKMB. Pengecualian untuk tahun ini, agenda itu ditiadakan karena kepanitiaan dipegang sepenuhnya oleh kampus.\n\n
+Orasi kebangsaan itu, kata Farras, berisikan antara lain problematika di UNY, PTNBH, fasilitas dan lain sebagainya. Dia menekankan, BEM sama sekali tak bermaksud untuk menghasut para mahasiswa.\n\n
+'Apa yang kita sampaikan itu untuk pencerdasan, edukasi soal gerakan mahasiswa,' tuturnya.\n\n
+Lantaran tak masuk dalam susunan acara, pihaknya mencoba menyampaikan orasi tersebut di akhir kegiatan. Akan tetapi, mereka tak diizinkan masuk ke area GOR.\n\n
+Beberapa kali BEM mencoba masuk namun terus diadang. Sampai mereka akhirnya mencoba dengan sedikit paksaan. Tapi, salah seorang anggota malah dijatuhkan dan ditindih oleh petugas keamanan kampus dan keamanan acara yang juga mahasiswa.\n\n
+'Itu mereka memberikan respons yang sangat keras, bahkan ada salah satu kawan kita yang ditindih oleh beberapa orang, yang mana itu mengakibatkan lecet, pasti sakit ketika dijatuhkan dan ditindih,' imbuhnya.\n\n
+Merasa tak lagi kondusif, para anggota BEM mundur dan pindah ke halaman GOR sambil terus menyampaikan orasi bersamaan dengan para mahasiswa baru yang hendak berpindah ke fakultas masing-masing.\n\n
+Para anggota BEM lalu pindah ke gerbang karena lokasi ini dianggap pas untuk menyampaikan orasi. Farras menyangkal pihaknya kala itu mencoba menutup akses atau jalur para mahasiswa baru.\n\n
+'Ketika berjalan beberapa menit, ada oknum dosen yang meringkus kita dengan memegang leher atau mencekik. Kejadian itu cukup membuat syok teman-teman dan di situlah ada sedikit banyak keributan,' katanya.\n\n
+Farras bilang, pihaknya tak habis pikir karena sejak awal mereka tak menghendaki adanya keributan, melainkan mimbar bebas buat menyuarakan aspirasi. Demi menghindari hal-hal yang lebih tak diinginkan, para BEM pindah ke pinggir jalan dan lanjut menyampaikan orasinya.\n\n
+Farras menuturkan, pihaknya berencana melaporkan insiden ini ke LBH Yogyakarta."
+                app:layout_constraintEnd_toEndOf="@id/imageView2"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toStartOf="@id/imageView2"
+                app:layout_constraintTop_toBottomOf="@id/imageView2"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"
+                android:id="@+id/guideline"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_prev"
+                android:text="PREV"
+                app:layout_constraintTop_toBottomOf="@id/textView_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#CC0000"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_next"
+                android:text="NEXT"
+                app:layout_constraintTop_toBottomOf="@id/textView_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_prev"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#CC0000"
+                android:textStyle="bold"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
